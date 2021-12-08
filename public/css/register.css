@@ -93,12 +93,14 @@ header h2{
     display: none;
 }
 
+
  .main_form{
     background-color: rgb(210,210,210);
     padding: 1rem;
     margin: 1rem;
     border-radius: .5rem;
     box-shadow: 0 0 .25rem 0 rgba(16, 16, 16, 1);
+    max-width: 650px;  
 }
 
 .main_form fieldset{
@@ -110,11 +112,21 @@ header h2{
 }
 
 .main_form fieldset input{
-    flex: 1 0 auto;
     border: none;
     border-radius: 3px;
     outline: none;
     padding: 0.4rem 0.2rem;
+    width: 100%;
+}
+
+input[type="radio"]{
+    max-width: 13px;
+    max-height: 13px;
+}
+
+input[type="checkbox"]{
+    max-width: 13px;
+    max-height: 13px;
 }
 
 .list  {
@@ -130,10 +142,6 @@ header h2{
     width: 100%;
 }
 
-.opt label{
-    flex: 1 1 auto;
-
-}
 
 .list label{
     margin: -20px 0 5px 25px;
@@ -234,6 +242,28 @@ footer{
       justify-content: space-between;
     }
 
+    .header_section picture{
+        width: 300px;
+        height: 80px;
+    }
+
+    .main_form{
+        margin: 3.5rem;
+    }
+
+    .main_form fieldset input{
+        width: 380px;
+    }
+
+    .header_section picture{
+        width: 300px;
+        height: 80px;
+    }
+    
+    .opt label{
+        margin-right: 200px;
+    }
+
     header form input{
         width: 25vw;
     }
@@ -281,7 +311,6 @@ footer{
   }
 
   .main_form{
-      width: 80%;
       margin: auto;
   }
 }
