@@ -45,7 +45,7 @@ header{
     border: none;
     border-left: solid 1px rgba(0, 0, 0, 0.3) ;
     top: 3px;
-    right: 0px;
+    right: 3px;
 }
 
 
@@ -106,9 +106,10 @@ main{
 }
 
 .body_section article{
-    margin: 15px 0px 15px 15px ;
+    margin: 15px auto;
     background-color: white;
-    transition: all 0.5s ease;
+    transition: box-shadow 0.5s ease;
+    width: min(95%, 350px);
 }
 
 .body_section article:hover{
@@ -117,6 +118,7 @@ main{
 
  article picture img{
     width: 100%; 
+
 }
 
 .body_section article dl{
@@ -263,7 +265,6 @@ footer{
     }
 
     .body_section article{
-        box-shadow: 0px 0px 10px rgb(0, 0, 0);
         max-width: 35%;
     }
     
